@@ -1,0 +1,41 @@
+<ion-app>
+  <ion-header class="ion-no-border" collapse="fade">
+    <ion-toolbar class="home-toolbar" [ngClass]="{'transparent-toolbar': isScrolled}">
+      <div style="padding: 0 7%">
+        <ion-row>
+          <ion-col size="6" style="display: flex; justify-content: start;">
+            <ion-img src="../../assets/icon/crown.png" style="width: 58px;"></ion-img>
+          </ion-col>
+          <ion-col size="6" style="display: flex; justify-content: end;">
+            <div (click)="isModalOpen(true)">
+              <ion-img src="../../assets/icon/ham-menu-1.png" style="width: 58px; cursor: pointer;"></ion-img>
+            </div>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-modal class="modal-menu" [isOpen]="modalOpen" [enterAnimation]="enterAnimation"
+    [leaveAnimation]="leaveAnimation">
+    <ng-template>
+      <div class="menu-list">
+        <ion-icon color="light" name="close-outline" (click)="isModalOpen(false)"></ion-icon>
+      </div>
+      <div class="menu-list">
+        <a (click)="routingByUrl('/')">HOME</a>
+      </div>
+      <div class="menu-list">
+        <a (click)="routingByUrl('homePage/menupage')">MENU</a>
+      </div>
+      <div class="menu-list">
+        <a (click)="routingByUrl('homePage/about')">ABOUT</a>
+      </div>
+      <div class="menu-list">
+        <a (click)="routingByUrl('homePage/menupage')">CONTACT</a>
+      </div>
+    </ng-template>
+  </ion-modal>
+  <ion-router-outlet>
+  </ion-router-outlet>
+</ion-app>

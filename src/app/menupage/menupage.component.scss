@@ -1,0 +1,63 @@
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../assets/image/kichen-hall.jpeg);
+  min-height: 90%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  .header-container {
+    position: absolute;
+    top: 35%;
+    left: 41%;
+    color: white;
+    text-align: center;
+    h3 {
+      font-family: Staatliches;
+      color: #ffd71b;
+      font-size: 30px;
+    }
+    h4 {
+      font-family: Staatliches;
+      font-size: 70px;
+    }
+  }
+}
+.header-second {
+  .header-card {
+    background: black;
+    .card-header-col {
+      border-bottom: none;
+      h1 {
+        color: #ffd71b;
+        font-family: Staatliches;
+        font-size: 2.5rem;
+      }
+    }
+    ion-col:nth-last-child(1),
+    ion-col:nth-last-child(2) {
+      border-bottom: none;
+    }
+    ion-col {
+      border-bottom: 1px dashed grey;
+      h3 {
+        font-family: Roboto;
+        color: white;
+      }
+      p {
+        color: #afafaf;
+        font-family: Roboto;
+      }
+      h4 {
+        font-family: Roboto;
+        color: white;
+      }
+    }
+  }
+}
+.left-side {
+  transform: translateY(-19%);
+}
+.right-side {
+  transform: translateY(-16%);
+}

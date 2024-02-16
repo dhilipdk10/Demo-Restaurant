@@ -1,0 +1,120 @@
+.map-head-sec {
+  position: relative;
+  padding: 10% 0 0 0;
+  background: #000;
+  .map-img {
+    z-index: 1;
+    height: 50rem;
+    width: 100%;
+    ion-img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+  .map-container {
+    position: absolute;
+    top: 5%;
+    left: 27%;
+    width: 47%;
+    ion-card {
+      background: linear-gradient(#222, #000);
+      padding: 10%;
+      .menu-feature-heading {
+        h1 {
+          font-size: 25px;
+          color: #ffd71b;
+          font-family: Staatliches;
+        }
+        h2 {
+          font-size: 45px;
+          color: #eee;
+          font-family: Staatliches;
+        }
+      }
+      .map-info {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 18px;
+        font-family: Roboto;
+        ion-icon {
+          width: 7%;
+          height: 40px;
+          padding: 0 4% 0 26%;
+        }
+      }
+    }
+  }
+}
+.footer-upper-page {
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../../assets/image/fourth-dinning.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  p {
+    color: white;
+    font-family: Roboto;
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+  ion-input {
+    border: 1px solid white;
+    color: white;
+    width: 80%;
+    margin-left: 47px;
+    --highlight-color-focuse: none;
+  }
+  ion-button {
+    width: 80%;
+    margin-right: 10px;
+    margin-top: 10px;
+    --border-radius: 0;
+    --background: black;
+    border: 1px solid white;
+  }
+}
+.footer-lower-page {
+  background: black;
+  height: 80vh;
+  .list {
+    padding-top: 5%;
+    .menu-list a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ddd;
+      font-family: Staatliches;
+      line-height: 4rem;
+      letter-spacing: 2px;
+      font-size: 23px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+  .socialmedia {
+    margin-top: 3%;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    min-height: 15%;
+    ion-icon {
+      width: 5%;
+      cursor: pointer;
+      height: 30px;
+    }
+  }
+  .author {
+    p {
+      text-align: center;
+      font-family: ROBOTO;
+      color: #ddd;
+      letter-spacing: 3px;
+    }
+  }
+}

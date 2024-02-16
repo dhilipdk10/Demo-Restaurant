@@ -1,0 +1,44 @@
+.home-toolbar {
+  --background: black;
+  height: 100px;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.transparent-toolbar {
+  --background: transparent;
+}
+
+.modal-menu {
+  --height: 100%;
+  --width: 100%;
+  --background: black;
+  .menu-list ion-icon {
+    cursor: pointer;
+  }
+  .menu-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0;
+    font-family: Staatliches;
+    font-size: 40px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+ion-modal ::ng-deep .ion-page {
+  height: 75%;
+}
+.menu-list ion-icon {
+  font-size: 45px;
+  margin: 28px 0 0;
+  margin-left: 90%;
+}
+
+.dark-blue {
+  background-color: #000080;
+}
