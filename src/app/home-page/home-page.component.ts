@@ -47,4 +47,5 @@ export class HomePageComponent implements OnInit {
     this.modalOpen = false;
     this.route.navigateByUrl(url);
   }
+  menuPage() {}
 }
