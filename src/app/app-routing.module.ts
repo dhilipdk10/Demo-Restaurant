@@ -4,10 +4,6 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { MenupageComponent } from './menupage/menupage.component';
 import { AboutpageComponent } from './aboutpage/aboutpage.component';
 const routes: Routes = [
-  // {
-  //   path: 'home',
-  //   loadChildren: () => import().then( m => m.HomePageModule)
-  // },
   { path: 'homePage', component: HomePageComponent },
   { path: 'homePage/menupage', component: MenupageComponent },
   { path: 'homePage/aboutpage', component: AboutpageComponent },
