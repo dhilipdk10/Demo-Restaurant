@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MenupageComponent } from './menupage/menupage.component';
 import { CommonfooterComponent } from './commonfooter/commonfooter.component';
 import { AboutpageComponent } from './aboutpage/aboutpage.component';
+import { ContactpageComponent } from './contactpage/contactpage.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AboutpageComponent } from './aboutpage/aboutpage.component';
     MenupageComponent,
     CommonfooterComponent,
     AboutpageComponent,
+    ContactpageComponent,
   ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

@@ -1,0 +1,73 @@
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url(../../assets/image/fourth-dinning.jpeg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  .header-container {
+    color: white;
+    font-family: Staatliches;
+    position: absolute;
+    left: 43%;
+    top: 37%;
+    z-index: 1;
+    text-align: center;
+    h3 {
+      font-size: 25px;
+      color: #ffd71b;
+      font-family: Staatliches;
+    }
+    h4 {
+      font-size: 5rem;
+      color: #eee;
+      font-family: Staatliches;
+    }
+  }
+}
+ion-col {
+  .main {
+    padding: 0 0 3rem 0;
+    h2 {
+      font-size: 3rem;
+      font-family: Staatliches;
+    }
+  }
+}
+.socialmedia {
+  padding-top: 25px;
+  ion-icon {
+    width: 8%;
+    height: 30px;
+  }
+}
+.map {
+  .map-info {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: Roboto;
+    ion-icon {
+      width: 7%;
+      height: 35px;
+      padding: 0 4% 0 0;
+    }
+  }
+}
+
+.form-col {
+  margin: 10px;
+  ion-input {
+    --background: #222;
+    color: #eee;
+    --highlight-color-focused: yellow;
+    --border-color: none;
+    --border-color-focused: yellow;
+  }
+  ion-button {
+    width: 100%;
+    --background: yellow;
+    color: #000000;
+  }
+}
