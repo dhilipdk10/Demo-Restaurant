@@ -10,7 +10,7 @@
     color: white;
     font-family: Staatliches;
     position: absolute;
-    left: 43%;
+    left: 40%;
     top: 37%;
     z-index: 1;
     text-align: center;
@@ -58,7 +58,7 @@ ion-col {
 
 .form-col {
   margin: 10px;
-  ion-input {
+  ion-textarea {
     --background: #222;
     color: #eee;
     --highlight-color-focused: yellow;

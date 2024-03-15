@@ -1,6 +1,6 @@
 <ion-app>
-  <ion-header class="ion-no-border" collapse="fade">
-    <ion-toolbar class="home-toolbar" [ngClass]="{'transparent-toolbar': isScrolled}">
+  <ion-header class="ion-no-border">
+    <ion-toolbar class="home-toolbar">
       <div style="padding: 0 7%">
         <ion-row>
           <ion-col size="6" style="display: flex; justify-content: start;">
@@ -23,16 +23,16 @@
         <ion-icon color="light" name="close-outline" (click)="isModalOpen(false)"></ion-icon>
       </div>
       <div class="menu-list">
-        <a (click)="routingByUrl('/')">HOME</a>
+        <a [routerLink]="'homePage'" (click)="isModalOpen(false)">HOME</a>
       </div>
       <div class="menu-list">
-        <a (click)="routingByUrl('homePage/menupage')">MENU</a>
+        <a [routerLink]="'menupage'" (click)="isModalOpen(false)">MENU</a>
       </div>
       <div class="menu-list">
-        <a (click)="routingByUrl('homePage/aboutpage')">ABOUT</a>
+        <a [routerLink]="'aboutpage'" (click)="isModalOpen(false)">ABOUT</a>
       </div>
       <div class="menu-list">
-        <a (click)="routingByUrl('homePage/contactpage')">CONTACT</a>
+        <a [routerLink]="'contactpage'" (click)="isModalOpen(false)">CONTACT</a>
       </div>
     </ng-template>
   </ion-modal>

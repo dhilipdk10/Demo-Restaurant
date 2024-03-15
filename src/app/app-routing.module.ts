@@ -6,9 +6,9 @@ import { AboutpageComponent } from './aboutpage/aboutpage.component';
 import { ContactpageComponent } from './contactpage/contactpage.component';
 const routes: Routes = [
   { path: 'homePage', component: HomePageComponent },
-  { path: 'homePage/menupage', component: MenupageComponent },
-  { path: 'homePage/aboutpage', component: AboutpageComponent },
-  { path: 'homePage/contactpage', component: ContactpageComponent },
+  { path: 'menupage', component: MenupageComponent },
+  { path: 'aboutpage', component: AboutpageComponent },
+  { path: 'contactpage', component: ContactpageComponent },
   {
     path: '',
     redirectTo: 'homePage',
@@ -17,7 +17,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

@@ -9,5 +9,11 @@ export class ContactpageComponent implements OnInit {
   // email: any = support@gmail.com ;
   constructor() {}
 
-  ngOnInit() {}
+  pageReload(event: Event) {
+    event.preventDefault();
+    console.log('Submit button clicked');
+  }
+  ngOnInit() {
+    const a = null;
+  }
 }

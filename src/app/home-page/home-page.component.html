@@ -40,7 +40,7 @@
                 happiness to your life
               </p>
             </ion-text>
-            <ion-button class="story-button" (click)="routingByUrl('homePage/aboutpage')">OUR STORY</ion-button>
+            <ion-button class="story-button" (click)="routingByUrl('aboutpage')">OUR STORY</ion-button>
           </ion-col>
           <ion-col size="5">
             <div>
@@ -116,7 +116,7 @@
           </ion-row>
         </ion-col>
         <ion-col class="col-story-button" size="12">
-          <ion-button (click)="routingByUrl('homePage/menupage')" class="story-button">SEE MENU</ion-button>
+          <ion-button (click)="routingByUrl('menupage')" class="story-button">SEE MENU</ion-button>
         </ion-col>
       </ion-row>
     </div>
@@ -204,7 +204,60 @@
           </ion-row>
         </ion-col>
         <ion-col class="col-story-button" size="12">
-          <ion-button class="story-button">READ MORE</ion-button>
+          <ion-button class="story-button" (click)="routingByUrl('aboutpage')">READ MORE</ion-button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </section>
+  <section>
+    <ion-row>
+      <ion-col size="12" style="display: flex; justify-content: center;">
+        <h1 style="color: rgb(250, 221, 34); line-height: 28px; font-family: Staatliches,cursive; font-weight: bold;">
+          OUR</h1>
+      </ion-col>
+      <ion-col size="12" style="display: flex; justify-content: center;">
+        <h1 style="color: white; font-family: Staatliches,cursive; font-weight: bold; font-size: 32px;">STORY
+        </h1>
+      </ion-col>
+    </ion-row>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30rem 30rem 30rem;">
+      <ion-row>
+        <ion-col size="12">
+          <ion-row class="story-images">
+            <ion-col size="6">
+              <ion-row>
+                <ion-col>
+                  <ion-img class="story-img-1" src="../../assets/image/kichen-hall.jpeg"></ion-img>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-img class="story-img-2" src="../../assets/image/fourth-dinning.jpeg"></ion-img>
+                </ion-col>
+                <ion-col>
+                  <ion-img class="story-img-2-1" src="../../assets/image/5th-dinning.jpeg"></ion-img>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+              </ion-row>
+            </ion-col>
+            <ion-col size="6">
+              <ion-row>
+                <ion-col>
+                  <ion-img class="story-img-1-1" src="../../assets/image/photo-1554679665-f5537f187268.jpeg"></ion-img>
+                </ion-col>
+                <ion-col>
+                  <ion-img class="story-img-1-2" src="../../assets/image/dinning-hall.jpeg"></ion-img>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-img class="story-img-2-3" src="../../assets/image/6th-dinning.jpeg"></ion-img>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
         </ion-col>
       </ion-row>
     </div>
