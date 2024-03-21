@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
+import { IonContent } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { AnimationController } from '@ionic/angular';
 
@@ -8,22 +9,32 @@ import { AnimationController } from '@ionic/angular';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+  @ViewChild(IonContent, { static: false })
+  content!: IonContent;
   modalOpen: boolean = false;
   scrool: boolean = false;
   constructor(
     private route: Router,
     private animationCtrl: AnimationController
   ) {}
-  isScrolled: boolean = false;
-
-  @HostListener('window:scroll', ['$event'])
-  onScroll(event: any) {
-    if (window.scrollY > 100) {
-      this.isScrolled = true;
-    } else {
-      this.isScrolled = false;
-    }
-  }
+  // eslint-disable-next-line @angular-eslint/use-lifecycle-interface
+  // ngAfterViewInit() {
+  //   this.content.scrollEvents = false;
+  //   this.content.ionScroll.subscribe((event) => {
+  //     // Check if the page is scrolled, and change the background color accordingly
+  //     if (event.detail.scrollTop > 0) {
+  //       document.documentElement.style.setProperty(
+  //         '--ion-background-color',
+  //         'transparent'
+  //       );
+  //     } else {
+  //       document.documentElement.style.setProperty(
+  //         '--ion-background-color',
+  //         'black'
+  //       );
+  //     }
+  //   });
+  // }\\
   isModalOpen(isOpen: any) {
     this.modalOpen = isOpen;
   }

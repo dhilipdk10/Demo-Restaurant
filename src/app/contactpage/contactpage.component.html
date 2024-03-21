@@ -1,0 +1,80 @@
+<ion-content style="--background: #ffd71b;">
+  <section class="header">
+    <div class="header-container">
+      <h3> NEED HELP </h3>
+      <h4>
+        CONTACT US
+      </h4>
+    </div>
+  </section>
+  <section>
+    <div style="max-width: 114rem; margin: 0 6% 0 6%;">
+      <ion-grid>
+        <ion-row>
+          <ion-col sizeSm="12" sizeLg="6" style="transform: translate(10px, -15%);">
+            <div>
+              <ion-card style="background: #000;
+              padding: 4rem 2rem">
+                <ion-row>
+                  <ion-col size="12" class="form-col">
+                    <ion-textarea label="Name" label-placement="floating" fill="outline"
+                      placeholder="Enter Name"></ion-textarea>
+                  </ion-col>
+                  <ion-col size="12" class="form-col">
+                    <ion-textarea label="Email" label-placement="floating" fill="outline"
+                      placeholder="Enter EmailAddress"></ion-textarea>
+                  </ion-col>
+                  <ion-col size="12" class="form-col">
+                    <ion-textarea label="Message" labelPlacement="floating" fill="outline"
+                      placeholder="Enter text"></ion-textarea>
+                  </ion-col>
+                  <ion-col size="12" class="form-col">
+                    <ion-button (click)="pageReload($event)">Submit</ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card>
+            </div>
+          </ion-col>
+          <ion-col sizeSm="12" sizeLg="6" style="padding-left: 5%; transform: translate(10px, -10%);">
+            <div class="main">
+              <div>
+                <h2>CONNECT</h2>
+                <div style="display: flex; align-items: center">
+                  <ion-icon style="width: 5%; height: 35px;" name="mail-outline"></ion-icon>
+                  <p style="margin-left: 10px;">{{ 'Support@gmail.com' }}</p>
+                </div>
+                <div style="display: flex; align-items: center">
+                  <ion-icon style="width: 5%; height: 35px;" name="call-outline"></ion-icon>
+                  <p style="margin-left: 10px;">{{"+69-6969696969"}}</p>
+                </div>
+              </div>
+            </div>
+            <div class="main">
+              <h2>FOLLOW US</h2>
+              <div class="socialmedia">
+
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-snapchat"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+              </div>
+            </div>
+            <div class="main">
+              <div class="map">
+                <h2>OUR ADDRESS</h2>
+                <div class="map-info">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <p>Beverly Hills, Opp Ring Road<br>
+                    California, 669969</p>
+                </div>
+              </div>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </section>
+  <app-commonfooter>
+  </app-commonfooter>
+</ion-content>

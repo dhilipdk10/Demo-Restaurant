@@ -29,8 +29,9 @@
         <ion-col size="12">
           <ion-img src="../../assets/icon/crown.png" style="width: 58px; margin:10% 0 0 44%;"></ion-img>
           <p style="color: white;">STAY UPDATED WITH DEALS </p>
-          <ion-input type="email" placeholder="Email Address"></ion-input>
-          <ion-button>SUBMIT</ion-button>
+          <ion-input label="Outline input" label-placement="floating" fill="outline" placeholder="Email Address"
+            name="emailaddress" [(ngModel)]="emailAddress"></ion-input>
+          <ion-button (click)="details()">SUBMIT</ion-button>
         </ion-col>
       </ion-row>
     </div>
@@ -40,13 +41,13 @@
           <a (click)="routingByUrl('/')">HOME</a>
         </div>
         <div class="menu-list">
-          <a (click)="routingByUrl('homePage/menupage')">MENU</a>
+          <a (click)="routingByUrl('menupage')">MENU</a>
         </div>
         <div class="menu-list">
-          <a (click)="routingByUrl('homePage/aboutpage')">ABOUT</a>
+          <a (click)="routingByUrl('aboutpage')">ABOUT</a>
         </div>
         <div class="menu-list">
-          <a (click)="routingByUrl('homePage/menupage')">CONTACT</a>
+          <a (click)="routingByUrl('contactpage')">CONTACT</a>
         </div>
       </div>
       <div class="socialmedia" style="color: white;

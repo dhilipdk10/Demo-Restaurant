@@ -12,8 +12,13 @@ export class CommonfooterComponent implements OnInit {
   ngOnInit() {
     const a = null;
   }
-
+  emails: string[] = [];
+  emailAddress = '';
   routingByUrl(url: any) {
     this.route.navigateByUrl(url);
+  }
+  details() {
+    this.emails.push(this.emailAddress);
+    this.emailAddress = '';
   }
 }

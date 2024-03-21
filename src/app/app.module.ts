@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
+import { Aos } from 'aos';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -10,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MenupageComponent } from './menupage/menupage.component';
 import { CommonfooterComponent } from './commonfooter/commonfooter.component';
 import { AboutpageComponent } from './aboutpage/aboutpage.component';
+import { ContactpageComponent } from './contactpage/contactpage.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +22,14 @@ import { AboutpageComponent } from './aboutpage/aboutpage.component';
     MenupageComponent,
     CommonfooterComponent,
     AboutpageComponent,
+    ContactpageComponent,
   ],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    FormsModule,
+  ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
