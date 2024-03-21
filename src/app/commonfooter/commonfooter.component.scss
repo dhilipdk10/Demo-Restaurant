@@ -55,7 +55,6 @@
   background-position: center;
   display: flex;
   justify-content: center;
-  text-align: center;
   p {
     color: white;
     font-family: Roboto;
@@ -65,14 +64,11 @@
   ion-input {
     border: 1px solid white;
     color: white;
-    width: 80%;
-    margin-left: 47px;
-    --highlight-color-focuse: none;
+    --highlight-color-focused: white;
   }
   ion-button {
-    width: 80%;
-    margin-right: 10px;
-    margin-top: 10px;
+    width: 100%;
+    margin: 15px 0 0 0;
     --border-radius: 0;
     --background: black;
     border: 1px solid white;
