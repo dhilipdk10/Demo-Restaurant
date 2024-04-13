@@ -20,5 +20,6 @@ export class CommonfooterComponent implements OnInit {
   details() {
     this.emails.push(this.emailAddress);
     this.emailAddress = '';
+    window.location.reload();
   }
 }
