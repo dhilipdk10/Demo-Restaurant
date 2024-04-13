@@ -60,11 +60,11 @@
     font-family: Roboto;
     font-size: 25px;
     letter-spacing: 2px;
+    text-align: center;
   }
   ion-input {
-    border: 1px solid white;
     color: white;
-    --highlight-color-focused: white;
+    --highlight-color: white;
   }
   ion-button {
     width: 100%;
@@ -72,6 +72,9 @@
     --border-radius: 0;
     --background: black;
     border: 1px solid white;
+  }
+  .has-focus.input-fill-outline.ion-valid.sc-ion-input-md-h {
+    --border-color: #b3b3b3;
   }
 }
 .footer-lower-page {
