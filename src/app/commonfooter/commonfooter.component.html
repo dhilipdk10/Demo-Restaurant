@@ -23,47 +23,47 @@
   </div>
 </section>
 <section>
-  <div>
-    <div class="footer-upper-page">
-      <ion-row style="width: 34%;">
-        <ion-col size="12">
-          <ion-img src="../../assets/icon/crown.png" style="width: 58px; margin:10% 0 0 44%;"></ion-img>
-          <p style="color: white;">STAY UPDATED WITH DEALS </p>
+  <div class="footer-upper-page">
+    <ion-row style="width: 34%;">
+      <ion-col sizeXs="12" sizeLg="12">
+        <ion-img src="../../assets/icon/crown.png" style="width: 58px; margin-left: 45%;"></ion-img>
+        <p style="color: white;">STAY UPDATED WITH DEALS </p>
+        <div style="margin: 0 12%;">
           <ion-input label="Email Address" label-placement="floating" fill="outline" placeholder="Email Address"
             name="emailaddress" [(ngModel)]="emailAddress"></ion-input>
           <ion-button (click)="details()">SUBMIT</ion-button>
-        </ion-col>
-      </ion-row>
-    </div>
-    <div class="footer-lower-page">
-      <div class="list">
-        <div class="menu-list">
-          <a (click)="routingByUrl('/')">HOME</a>
         </div>
-        <div class="menu-list">
-          <a (click)="routingByUrl('menupage')">MENU</a>
-        </div>
-        <div class="menu-list">
-          <a (click)="routingByUrl('aboutpage')">ABOUT</a>
-        </div>
-        <div class="menu-list">
-          <a (click)="routingByUrl('contactpage')">CONTACT</a>
-        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="footer-lower-page">
+    <div class="list">
+      <div class="menu-list">
+        <a (click)="routingByUrl('/')">HOME</a>
       </div>
-      <div class="socialmedia" style="color: white;
+      <div class="menu-list">
+        <a (click)="routingByUrl('menupage')">MENU</a>
+      </div>
+      <div class="menu-list">
+        <a (click)="routingByUrl('aboutpage')">ABOUT</a>
+      </div>
+      <div class="menu-list">
+        <a (click)="routingByUrl('contactpage')">CONTACT</a>
+      </div>
+    </div>
+    <div class="socialmedia" style="color: white;
       display: flex;
       /* align-items: center; */
       justify-content: center;">
-        <ion-icon name="logo-facebook"></ion-icon>
-        <ion-icon name="logo-twitter"></ion-icon>
-        <ion-icon name="logo-instagram"></ion-icon>
-        <ion-icon name="logo-snapchat"></ion-icon>
-        <ion-icon name="logo-youtube"></ion-icon>
-      </div>
-      <div class="author">
-        <p>© 2023 RANDOM RESTAURANT<br>
-          DEVELOPED BY DHILIPKUMAR</p>
-      </div>
+      <ion-icon name="logo-facebook"></ion-icon>
+      <ion-icon name="logo-twitter"></ion-icon>
+      <ion-icon name="logo-instagram"></ion-icon>
+      <ion-icon name="logo-snapchat"></ion-icon>
+      <ion-icon name="logo-youtube"></ion-icon>
+    </div>
+    <div class="author">
+      <p>© 2023 RANDOM RESTAURANT<br>
+        DEVELOPED BY DHILIPKUMAR</p>
     </div>
   </div>
 </section>

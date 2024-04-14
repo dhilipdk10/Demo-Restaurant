@@ -47,7 +47,7 @@
   }
 }
 .footer-upper-page {
-  height: 50vh;
+  padding: 5%;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../../assets/image/fourth-dinning.jpeg);
   background-size: cover;
@@ -62,24 +62,25 @@
     letter-spacing: 2px;
     text-align: center;
   }
-  ion-input {
-    color: white;
-    --highlight-color: white;
-  }
-  ion-button {
-    width: 100%;
-    margin: 15px 0 0 0;
-    --border-radius: 0;
-    --background: black;
-    border: 1px solid white;
-  }
-  .has-focus.input-fill-outline.ion-valid.sc-ion-input-md-h {
-    --border-color: #b3b3b3;
+  div {
+    ion-input {
+      color: white;
+      --highlight-color: white;
+    }
+    ion-button {
+      width: 100%;
+      margin: 15px 0 0 0;
+      --border-radius: 0;
+      --background: black;
+      border: 1px solid white;
+    }
+    .has-focus.input-fill-outline.ion-valid.sc-ion-input-md-h {
+      --border-color: #b3b3b3;
+    }
   }
 }
 .footer-lower-page {
   background: black;
-  height: 80vh;
   .list {
     padding-top: 5%;
     .menu-list a {
